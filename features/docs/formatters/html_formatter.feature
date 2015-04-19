@@ -61,11 +61,6 @@ Feature: HTML output formatter
       | features/scenario_outline_with_pending_step.feature    | --expand |
       | features/scenario_outline_with_pending_step.feature    |          |
 
-    Examples:
-      | file                                                   | flag     |
-      | features/scenario_outline_with_undefined_steps.feature | --expand |
-      | features/scenario_outline_with_undefined_steps.feature |          |
-
   Scenario: when using a profile the html shouldn't include 'Using the default profile...'
     And a file named "cucumber.yml" with:
     """
